@@ -1,0 +1,11 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+
+- script: echo "✅ Azure Pipeline for EduTrack is running!"
+  displayName: 'Run Sample Script'
